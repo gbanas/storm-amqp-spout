@@ -378,6 +378,7 @@ public class AMQPSpout implements IRichSpout {
         final ConnectionFactory connectionFactory = new ConnectionFactory() {
             public void configureSocket(Socket socket)
                 throws IOException {
+                socket.setKeepAlive(true);
                 socket.setTcpNoDelay(false);
                 socket.setReceiveBufferSize(20*1024);
                 socket.setSendBufferSize(20*1024);
