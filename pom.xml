@@ -2,13 +2,18 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.clojars.storm-amqp</groupId>
     <artifactId>storm-amqp-spout</artifactId>
-    <version>0.2.7-SNAPSHOT</version>
+    <version>0.2.8-SNAPSHOT</version>
 
     <name>Storm AMQP Spout</name>
     <description>AMQP input source for Storm</description>
-	<url>http://github.com/storm-amqp/storm-amqp-spout</url>
+	<url>http://github.com/gbanas/storm-amqp-spout</url>
 
     <developers>
+        <developer>
+            <name>Greg Banas</name>
+            <email>banasg+github@gmail.com</email>
+            <url>http://gregbanas.com</url>
+        </developer>
         <developer>
             <name>Michael Rose</name>
             <email>elementation@gmail.com</email>
@@ -17,7 +22,7 @@
         <developer>
             <name>Brenden Matthews</name>
             <email>brenden@diddyinc.com</email>
-			<url>http://diddyinc.com/</url>
+            <url>http://diddyinc.com</url>
         </developer>
     </developers>
 
@@ -29,9 +34,9 @@
     </licenses>
 
     <scm>
-        <connection>scm:git:git@github.com:storm-amqp/storm-amqp-spout.git</connection>
-        <url>http://github.com/storm-amqp/storm-amqp-spout</url>
-        <developerConnection>scm:git:git@github.com:storm-amqp/storm-amqp-spout.git</developerConnection>
+        <connection>scm:git:git@github.com:gbanas/storm-amqp-spout.git</connection>
+        <url>https://github.com/gbanas/storm-amqp-spout</url>
+        <developerConnection>scm:git:git@github.com:gbanas/storm-amqp-spout.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
 
@@ -68,16 +73,17 @@
             <version>1.2.16</version>
         </dependency>
     </dependencies>
+
     <build>
-		<plugins>
-			<plugin>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>2.3.2</version>
-				<configuration>
-					<source>1.7</source>
-					<target>1.7</target>
-				</configuration>
-			</plugin>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.3.2</version>
+                <configuration>
+                    <source>1.7</source>
+                    <target>1.7</target>
+                </configuration>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
